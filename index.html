@@ -47,13 +47,15 @@
         </ul>
     </div>
 
+    <div id="main-wrapper" class="main-wrapper">
 
         <!--=====================================-->
         <!--=        Header Area Start       	=-->
         <!--=====================================-->
-        <header class="header axil-header header-style-1 ">
+        <header class="header axil-header header-style-1 splash-header-style">
             <div id="axil-sticky-placeholder" style="height: 0px;"></div>
-            <div class="axil-mainmenu">
+            
+            <div class="axil-mainmenu axil-stick">
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
@@ -75,25 +77,23 @@
                                         <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
                                     </div>
                                 </div>
-                                <ul class="mainmenu nav nav-pills">
+                                <ul class="mainmenu" id="onepagenav">
                                     <li><a class = "nav-link" href="#services">Services</a></li>
                                     <li><a class = "nav-link" href="#brands">Brands</a></li>
                                     <li><a class = "nav-link" href="#testimonial">Testimonial</a></li>
                                     <li><a class = "nav-link" href="#contact">Contact</a></li>
                                     <!-- <li><a class = "nav-link" href="#contact">Call us now</a></li> -->
+                                    <!-- <li class = "header-btn">
+                                        <a href="tel:92472663" class="axil-btn btn-fill-primary">
+                                            Call us
+                                        </a>
+                                    </li> -->
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
                         </div>
-                        <div class="header-action">
-                            <ul class="list-unstyled">
-                                <!-- <li class="sidemenu-btn d-lg-block d-none">
-                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li> -->
+                        <div class="header-action" >
+                            <ul class="list-unstyled ">
                                 <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
                                     <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
                                         <span></span>
@@ -136,34 +136,6 @@
         <!--=====================================-->
         <!--=        Banner Area Start         =-->
         <!--=====================================-->
-
-        <nav id="onepagenav" class="service-scroll-nav navbar onepagefixed">
-            <div class="container">
-                <a href="tel:92472663">
-                    📞 Call us at (65) 9247 2663
-                </a>
-                <!-- <ul class="nav nav-pills">
-                    <li class="nav-item current">
-                        <a class="nav-link" href="#section1">Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section2">Development</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section3">Online Marketing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section4">Business</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section5">Technology</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section6">Content Strategy</a>
-                    </li>
-                </ul> -->
-            </div>
-        </nav>
         
         <section class="banner banner-style-1">
             <div class="container">
@@ -176,7 +148,7 @@
                             <span lang="zh">自 1998 年以来，在新加坡提供维修、服务和安装服务已有 25 年的经验并不断增加。 </span>
                             </span>
 
-                            <a href="tel:92472663" class="axil-btn btn-fill-primary btn-large"><i class="fab fa-whatsapp">  </i><span lang="en"> Call us 📞</span> <span lang="zh">拨号 📞</span></i></a>
+                            <a href="tel:92472663" class="axil-btn btn-fill-call btn-large"><i class="fab fa-whatsapp"></i><span lang="en"> Call us </span> <span lang="zh">拨号 </span></i></a>
 
                         </div>
                     </div>
@@ -222,101 +194,120 @@
             </ul>
         </section>
 
-         <!-- Design Service -->
-         <div class="section section-padding" id="services">
-            <div class="container">
-                <div class="section-heading heading-left">
-                    <span class="subtitle">What We Can Do For You</span>
-                    <h2 class="title">Services we can help you with</h2>
-                </div>
 
-                <h2 class="title">
-                    <img src="assets/media/icon/aircon.png" alt="Aircon"> Aircon 
-                </h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="services-grid service-style-2">
-                            <!-- <div class="thumbnail">
-                                <img src="assets/media/icon/icon-29.png" alt="icon">
-                            </div> -->
-                            <div class="content">
-                                <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">🧰 Repair</a></h5> -->
-                                <h5 class="title"> ⚙️ Repair</a></h5>
-                                <!-- <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p> -->
-                                <ul class="list-styled">
-                                    <!-- <lh>Reccomended to service 4 times a year.</lh> -->
-                                    <li>Warranty</li>
-                                    <li>Guarantee cold</li>
-                                    <li>Same day repair*</li>
-                                </ul>
-                                <a href="tel:92472663" class="more-btn">Call us for quotation</a>
-                            </div>
-                        </div>
+
+        <div class="service-scroll-navigation-area ">
+            <!-- Service Nav -->
+            <nav id="onepagenav" class="service-scroll-nav navbar onepagefixed " style="position: fixed; left: 0px; right: 0px; top: 0px; z-index: 5;">
+                <div class="container bg-color-dark-yellow">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item current">
+                            <a class="nav-link" href="tel:92472663">📞 Call us at (65) 9247 2663</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        
+
+            <!-- Design Service -->
+            <div class="section section-padding" id="services">
+                <div class="container">
+                    <div class="section-heading heading-left">
+                        <span class="subtitle">What We Can Do For You</span>
+                        <h2 class="title">Services we can help with</h2>
                     </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                        <div class="services-grid service-style-2 active">
-                            <!-- <div class="thumbnail">
-                                <img src="assets/media/icon/icon-27.png" alt="icon">
-                            </div> -->
-                            <div class="content">
-                                <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">Servicing</a></h5> -->
-                                <h5 class="title"> 🔫 Servicing</a></h5>
-                                <!-- <p>Reccomended to service 4 times a year.</p> -->
-                                <ul class="list-styled">
-                                    <!-- <lh>Reccomended to service 4 times a year.</lh> -->
-                                    <li>Professional wash</li>
-                                    <li>Aircon chemical overhaul*</li>
-                                    <li>Chemical wash*</li>
-                                    <li>Serviceable for all unit sizes</li>
-                                    <li>Servicable for all ceiling heights</li>
-                                </ul>
-                                <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                        <div class="services-grid service-style-2">
-                            <!-- <div class="thumbnail">
-                                <img src="assets/media/icon/icon-28.png" alt="icon">
-                            </div> -->
-                            <div class="content">
-                                <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">⚒️ Installation</a></h5>
-                                <!-- <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                    and user friendly. </p> -->
+
+                    <h2 class="title">
+                        <img src="assets/media/icon/aircon.png" alt="Aircon"> Aircon 
+                    </h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                                <!-- <div class="thumbnail">
+                                    <img src="assets/media/icon/icon-29.png" alt="icon">
+                                </div> -->
+                                <div class="content">
+                                    <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">🧰 Repair</a></h5> -->
+                                    <h5 class="title"> ⚙️ Repair</a></h5>
+                                    <!-- <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p> -->
                                     <ul class="list-styled">
                                         <!-- <lh>Reccomended to service 4 times a year.</lh> -->
                                         <li>Warranty</li>
                                         <li>Guarantee cold</li>
+                                        <li>Same day repair*</li>
                                     </ul>
-                                <a href="tel:92472663" class="more-btn">Call us for quotation</a>
-                                
+                                    <a href="tel:92472663" class="more-btn">Call us for quotation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2 active">
+                                <!-- <div class="thumbnail">
+                                    <img src="assets/media/icon/icon-27.png" alt="icon">
+                                </div> -->
+                                <div class="content">
+                                    <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">Servicing</a></h5> -->
+                                    <h5 class="title"> 🔫 Servicing</a></h5>
+                                    <!-- <p>Reccomended to service 4 times a year.</p> -->
+                                    <ul class="list-styled">
+                                        <!-- <lh>Reccomended to service 4 times a year.</lh> -->
+                                        <li>Professional wash</li>
+                                        <li>Aircon chemical overhaul*</li>
+                                        <li>Chemical wash*</li>
+                                        <li>Serviceable for all unit sizes</li>
+                                        <li>Servicable for all ceiling heights</li>
+                                    </ul>
+                                    <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html" class="more-btn">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                                <!-- <div class="thumbnail">
+                                    <img src="assets/media/icon/icon-28.png" alt="icon">
+                                </div> -->
+                                <div class="content">
+                                    <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">⚒️ Installation</a></h5>
+                                    <!-- <p>We design professional looking yet Mobile Apps. Our designs are search engine
+                                        and user friendly. </p> -->
+                                        <ul class="list-styled">
+                                            <!-- <lh>Reccomended to service 4 times a year.</lh> -->
+                                            <li>Warranty</li>
+                                            <li>Guarantee cold</li>
+                                        </ul>
+                                    <a href="tel:92472663" class="more-btn">Call us for quotation</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="title"><img src="assets/media/icon/fridge.png"> Fridge</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                                <!-- <div class="thumbnail">
+                                    <img src="assets/media/icon/icon-29.png" alt="icon">
+                                </div> -->
+                                <div class="content">
+                                    <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">⚙️ Repair</a></h5>
+                                    <!-- <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p> -->
+                                    <ul class="list-styled">
+                                        <!-- <lh>Reccomended to service 4 times a year.</lh> -->
+                                        <li>Warranty</li>
+                                        <li>Guarantee cold</li>
+                                        <li>Same day repair*</li>
+                                    </ul>
+                                    <a href="tel:92472663" class="more-btn">Call us for quotation</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h2 class="title"><img src="assets/media/icon/fridge.png"> Fridge</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="services-grid service-style-2">
-                            <!-- <div class="thumbnail">
-                                <img src="assets/media/icon/icon-29.png" alt="icon">
-                            </div> -->
-                            <div class="content">
-                                <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">⚙️ Repair</a></h5>
-                                <!-- <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p> -->
-                                <ul class="list-styled">
-                                    <!-- <lh>Reccomended to service 4 times a year.</lh> -->
-                                    <li>Warranty</li>
-                                    <li>Guarantee cold</li>
-                                    <li>Same day repair*</li>
-                                </ul>
-                                <a href="tel:92472663" class="more-btn">Call us for quotation</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+               
             </div>
-            
+        <!--"call us" service-scroll-navigation-area -->
         </div>
         <!--=====================================-->
         <!--=       Breadcrumb Area Start       =-->
@@ -344,7 +335,7 @@
         <!--=       Clients  Area Start        =-->
         <!--=====================================-->
         
-        <div class="container" >
+        <div class="container" id="brands">
             <h1 class="title h3">Aircon Brands we work with</h1>
             <div class="footer-top">
                 <div class="footer-social-link">
@@ -401,11 +392,11 @@
                             <!-- <p>Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p> -->
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="review-site-logo">
                             <a href="."><img src="assets/media/icon/google.png" alt="Google"></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
@@ -515,7 +506,7 @@
         <!--=====================================-->
         <!--=       Location  Area Start        =-->
         <!--=====================================-->
-        <section class="section section-padding bg-color-dark overflow-hidden">
+        <section class="section section-padding bg-color-dark overflow-hidden" id="contact">
             <div class="container">
                 <div class="section-heading heading-light-left">
                     <span class="subtitle">Find Us</span>
@@ -588,7 +579,7 @@
         <!--=====================================-->
         <footer class="footer-area">
             <div class="container">
-                <div class="footer-main">
+                <!-- <div class="footer-main">
                     <div class="row">
                         <div class="col-xl-6 col-lg-5 sal-animate" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
                             <div class="footer-widget border-end">
@@ -649,7 +640,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="footer-bottom sal-animate" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
                     <div class="row">
                         <div class="col-md-6">
