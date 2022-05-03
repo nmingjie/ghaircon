@@ -2872,7 +2872,7 @@ Pagination
 
 .banner .banner-content .axil-btn {
     padding: 28px 45px;
-    box-shadow: 0 44px 84px -24px #3853A4;
+    box-shadow: 0 44px 84px -24px #F8B500;
 }
 
 @media only screen and (max-width: 991px) {
@@ -5111,7 +5111,7 @@ Pagination
 
 .service-scroll-navigation-area {
     position: relative;
-    padding-top: 90px;
+    padding-top: 53px;
 }
 
 .service-scroll-nav {
