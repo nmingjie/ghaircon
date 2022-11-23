@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fridge
+* source:	https://sketchfab.com/3d-models/fridge-f24237c4a79944ccac475f179df6beb5
+* author:	bucketo (https://sketchfab.com/bucketo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fridge" (https://sketchfab.com/3d-models/fridge-f24237c4a79944ccac475f179df6beb5) by bucketo (https://sketchfab.com/bucketo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
