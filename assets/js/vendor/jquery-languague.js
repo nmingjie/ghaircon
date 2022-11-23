@@ -7,6 +7,13 @@ $(function () {
   
     function langButtonListen() {
       $('#switch-lang').click(function (event) {
+        window.onload = function(){
+          const currentYear = new Date().getFullYear();
+          const operationalYear = new Date().getFullYear() - 1998;
+      
+          document.getElementById('year').innerHTML = currentYear;
+          document.getElementById('operationalYear').innerHTML = currentYear;
+        };
         event.preventDefault();
         $('[lang="zh"]').toggle();
         $('[lang="en"]').toggle();

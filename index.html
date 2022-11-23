@@ -59,9 +59,9 @@
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="index.html"><img class="light-version-logo" src="assets/media/logo.svg" alt="logo"></a>
-                            <a href="index.html"><img class="dark-version-logo" src="assets/media/logo-3.svg" alt="logo"></a>
-                            <a href="index.html"><img class="sticky-logo" src="assets/media/logo-2.svg" alt="logo"></a>
+                            <a href="/"><img class="light-version-logo" src="assets/media/logo.svg" alt="logo"></a>
+                            <a href="/"><img class="dark-version-logo" src="assets/media/logo-3.svg" alt="logo"></a>
+                            <a href="/"><img class="sticky-logo" src="assets/media/logo-2.svg" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -145,22 +145,56 @@
                         <div class="banner-content sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
                             <h1 class="title"><span lang="en"> Aircon & Fridge Services</span><span lang="zh"> 空调和冰箱服务</span></h1>
                             
-                            <span class="subtitle" ><span lang="en">Offering repair, serving & installation in Singapore for 25 years of experience and counting since 1998.</span>
-                            <span lang="zh">自 1998 年以来，在新加坡提供维修、服务和安装服务已有 25 年的经验并不断增加。 </span>
+                            <span class="subtitle" >
+                                <span lang="en">
+                                    Offering repair, serving & installation in Singapore for <span id="operationalYear"> </span> years of experience and counting since 1998.
+                                </span>
+                                <span lang="zh">自 1998 年以来，在新加坡提供维修、服务和安装服务已有 <span id="operationalYear1"> </span> 年的经验并不断增加。
+                                </span>
                             </span>
-
+                            <!-- <span class="subtitle" ><span lang="zh">自 1998 年以来，在新加坡提供维修、服务和安装服务已有 <span id="operationalYear1"> </span>  年的经验并不断增加。 </span> </span> -->
+                            
                             <a href="tel:92472663" target="blank" class="axil-btn btn-fill-call btn-large"><i class="fab fa-whatsapp"></i> <span lang="en"> Call GH Aircon </span> <span lang="zh">拨号 GH Aircon</span></i></a>
 
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="banner-thumbnail">
-                            <div class="large-thumb sal-animate" data-sal="zoom-in" data-sal-duration="800" data-sal-delay="300">
+                            <!-- <div class="large-thumb sal-animate" data-sal="zoom-in" data-sal-duration="800" data-sal-delay="300">
                                 <img src="assets/media/others/fridge-bg.png" alt="Fridge">
                             </div>
                             <div class="large-thumb-2 sal-animate" data-sal="slide-left" data-sal-duration="800" data-sal-delay="800">
                                 <img src="assets/media/others/aircon-bg.png" alt="Aircon">
-                            </div>
+                            </div> -->
+                            <div id="container"></div>
+                            
+                            <script>
+                                const scene = new THREE.Scene();
+                                const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+                                const container = document.getElementById( 'container' );
+                    
+                                const renderer = new THREE.WebGLRenderer();
+                                renderer.setSize( window.innerWidth, window.innerHeight );
+                                container.appendChild( renderer.domElement );
+                                
+                                const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+                                const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+                                const cube = new THREE.Mesh( geometry, material );
+                                scene.add( cube );
+                    
+                                camera.position.z = 5;
+                    
+                                function animate() {
+                                    requestAnimationFrame( animate );
+                    
+                                    cube.rotation.x += 0.01;
+                                    cube.rotation.y += 0.01;
+                    
+                                    renderer.render( scene, camera );
+                                };
+                    
+                                animate();
+                            </script>
                             <!-- <ul class="list-unstyled shape-group">
                                 <li class="shape shape-1 sal-animate" data-sal="slide-left" data-sal-duration="500" data-sal-delay="800">
                                     <img src="assets/media/others/aircon-bg.png" alt="chat">
@@ -240,7 +274,7 @@
                                     <img src="assets/media/icon/icon-29.png" alt="icon">
                                 </div> -->
                                 <div class="content">
-                                    <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html">🧰 Repair</a></h5> -->
+                                    <!-- <h5 class="title"> <a href="https://new.axilthemes.com/demo/template/abstrak/service-design.html"> Repair</a></h5> -->
                                     <h5 class="title"> <i class="fa-solid fa-gear"></i> <span lang="en"> Repair</span><span lang="zh"> 修理</span></a></h5>
                                     <p><span lang="en"> We repair aircon issues such not cold, water leaking and noise problems.</span><span lang="zh"> 我们维修空调问题，例如不冷、漏水和噪音问题。</span></p>
                                     <ul class="list-styled">  
@@ -445,7 +479,7 @@
                         <a href="https://hoover.com/" target="_blank" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100" class="sal-animate brand-grid"><img src="assets/media/brand/hoover.png"> </a>
                     </div>
                 </div>
-                <p><span lang="en"> We support different type of aircon brands including Panasonic, Daikin, Fujitsu, Toshiba, LG and Mitsubishi. Over the years, we have established a steady client base, including both commercial and residential customers in Singapore. Thankfully, most of our clients are happy with our air con services.
+                <p><span lang="en"> We support different type of aircon brands including Panasonic, Daikin, Fujitsu, Toshiba, LG and Mitsubishi. Over the years, we have established a steady client base, including both commercial and residential customers in Singapore. Thankfully, most of our clients are happy with our aircon services.
 
                 </span><span lang="zh"> 我们支持不同类型的空调品牌，包括松下、大金、富士通、东芝、LG 和三菱。多年来，我们建立了稳定的客户群，包括新加坡的商业和住宅客户。值得庆幸的是，我们的大多数客户都对我们的空调服务感到满意 </span></p>
             </div>
@@ -555,7 +589,7 @@
                                     <img src="assets/media/testimonial/testimonial-2.png" alt="Google Review">
                                 </div>
                                 <div class="content">
-                                    <span class="name">Chee Siong Teow</span>
+                                    <span class="name">Dharma Doshi</span>
                                     <!-- <span class="designation">Executive Chairman</span> -->
                                 </div>
                             </div>
@@ -779,7 +813,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-copyright">
-                                <span class="copyright-text">© 2022. All rights reserved by <a href=".">GH Aircon & Electrical Engineering Ltd</a>.</span>
+                                
+                                <span class="copyright-text">© <span id="year"> </span> All rights reserved by <a href=".">GH Aircon & Electrical Engineering Ltd</a>.</span>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -874,7 +909,9 @@
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 
     <script src="assets/js/vendor/jquery-languague.js"></script>
-
+    <script src="assets/js/vendor/three.js"></script>
+    <script  type="module" src="assets/js/threeModel.js"></script>
+    
     <!-- Site Scripts -->
     <script src="assets/js/app.js"></script>
 

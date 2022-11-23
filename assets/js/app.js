@@ -1,6 +1,19 @@
 (function(window, document, $, undefined) {
     'use strict';
 
+    //custom
+
+    window.onload = function(){
+        const currentYear = new Date().getFullYear();
+        const operationalYear = new Date().getFullYear() - 1998;
+    
+        document.getElementById('year').innerHTML = currentYear;
+        document.getElementById('operationalYear').innerHTML = operationalYear;
+        document.getElementById('operationalYear1').innerHTML = operationalYear;
+
+
+    };
+
     var axilInit = {
         i: function(e) {
             axilInit.s();
